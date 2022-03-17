@@ -15,6 +15,9 @@ body{
 }
 
 /**********************Global Typography********************/
+h1{
+    visibility: hidden;
+}
 
 h2{
     font-family: sans-serif;
