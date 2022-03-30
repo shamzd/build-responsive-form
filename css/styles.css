@@ -68,10 +68,20 @@ fieldset input{
     border: 1px solid #a2adb7;
     border-radius: 5px;
 }
+
+fieldset>div:last-of-type{
+    display: flex;
+    align-items: center;
+}
+
 /* attribute selectors */
 input[type=radio],
 input[type=checkbox]{
     width: unset;
+}
+
+input[type=checkbox]{
+    margin-left: 1rem;
 }
 
 .interest label{
@@ -88,6 +98,16 @@ input[type=checkbox]{
         justify-content: space-around;
     }
 
+    .interest{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .interest > div{
+        flex: 1 0 50%;
+    }
+
     .inner-container div:first-of-type{
         width: 45%;
     }
@@ -95,6 +115,7 @@ input[type=checkbox]{
     form{
         width: 650px;
     }
+
 }
 
 @media screen and (min-width:1440px){
